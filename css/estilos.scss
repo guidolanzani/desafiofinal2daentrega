@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 1;
+    padding: 1;
+
+}
+
+#body {
+    font-family: "Montserrat";
+    overflow-x: hidden;
+}
+
+.cuerpo {}
+
+.navegacion {
+    margin-left: 3rem;
+
+    .botonmenu {
+        margin-left: 2rem;
+    }
+}
+
+.titulotarjetas {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.descripcion {
+    font-weight: 400;
+    text-align: center;
+}
+
+.precios {
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 700;
+    color: white;
+
+}
+
+.imagentarjeta {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@mixin margin($margintop) {
+    text-align: center;
+    padding: 1rem;
+    margin-top: $margintop
+}
+
+.imagentarjeta2 {
+    @include margin(2rem)
+}
+
+.imagentarjeta3 {
+    @include margin(3rem)
+}
+
+.titulo { 
+    font-family: "Montserrat" sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subtitulo {
+   font-family: "Montserrat" sans-serif;
+   font-size: 1.5rem;
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.tabla {
+    position: relative;
+    top: -30rem;
+    left: 20rem;
+}
+
+
+@media all and (max-width: 810px){
+	.tabla{
+		top: -20rem;
+        left: 1rem;
+	}
+}
+
+@media all and (max-width: 600px){
+	.tabla{
+		top: -15rem;
+        left: 5rem;
+	}
+}
+
+@media all and (max-width: 375px){
+	.tabla{
+        width: 100%;
+        top: -12rem;
+        left: -1rem;
+	}
+}
